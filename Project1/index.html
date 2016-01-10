@@ -6,11 +6,11 @@
 	</head>
 	<body>
 		<div id="header">
-			<p id="name">Scott Jordan Christensen</p>
+			<p id="name" onmouseover="mOver(this)" onmouseout="mOut(this)">Scott Jordan Christensen</p>
 			<a href="mailto:scottchristensen111@gmail.com"><p id="email">scottchristensen111@gmail.com</p></a>
 		</div>
 		<div class="left">
-		<img src= "http://ec2-52-10-93-201.us-west-2.compute.amazonaws.com/201html/Project1/793b3307-8068-494d-9058-3bcf49a59b39.jpg" alt = "A picture of Scott">
+		<img src= "http://ec2-52-10-93-201.us-west-2.compute.amazonaws.com/201html/Project1/me.jpg" alt = "A picture of Scott" style="width:135px;height:135px;">
 		<a href="http://ec2-52-10-93-201.us-west-2.compute.amazonaws.com/201html/Project1/index2.html">How can I learn more about this man?</a>
 		</div>
 		<div class="right">
@@ -38,6 +38,16 @@
 		<div id="footer">
 			<p>Like what ya see? Then contact me!<br>1237 N 3100 E, Layton, Utah 84040 | Tel: (801) 917-7746</p>
 		</div>
+
+		<script>
+		function mOver(obj) {
+   			obj.innerHTML = "Hi! How's it going?"
+		}
+
+		function mOut(obj) {
+    			obj.innerHTML = "Scott Jordan Christensen"
+		}
+		</script>
 	</body>
 </html>
 
