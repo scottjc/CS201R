@@ -2,6 +2,22 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="style.css">
+		<script>
+		function mOver(obj) {
+   			obj.innerHTML = "Yep, that's still my name."
+		}
+
+		function mOut(obj) {
+    			obj.innerHTML = "Scott Jordan Christensen"
+		}
+
+		$(document).ready(function(){
+			$("form").submit(function(){
+				alert("Something");
+			});
+		});
+
+		</script>
 		<title></title>
 	</head>
 	<body>
@@ -26,24 +42,15 @@
 			<h4>Donate to the "Lots of Awesome Stuff for Scott" Trust Fund</h4>
 			<p>Your donation will be used to support a hungry college student in your area</p>
 			<form action="">
-  				Name: <input type="text" name="FirstName" value=""><br>
-				Credit card number <input type="text" name="LastName" value=""><br>
+  				Name: <input type="text" name="Name" value=""><br>
+				Credit card number <input type="text" name="Number" value=""><br>
   				<input type="submit" value="Submit">
+
 			</form> 
 		</div>
 		<div id="footer">
 			<p>Like what ya see? Then contact me!<br>1237 N 3100 E, Layton, Utah 84040 | Tel: (801) 917-7746</p>
 		</div>
-
-		<script>
-		function mOver(obj) {
-   			obj.innerHTML = "Yep, that's still my name."
-		}
-
-		function mOut(obj) {
-    			obj.innerHTML = "Scott Jordan Christensen"
-		}
-		</script>
 	</body>
 </html>
 
