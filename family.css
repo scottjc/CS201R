@@ -1,0 +1,53 @@
+html {
+    background: url(http://www.cetour.com/AttachmentDir/images/YellowStone/b33dea73039f4e42a92d834f6732c286.jpg) no-repeat center center fixed;
+    background-size: 100%;
+}
+
+body{
+	text-align: center;
+}
+
+h1{
+	font-size: 40px;
+	color: white;
+}
+
+h2{
+	font-size: 20px;
+	color: white;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+div {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: yellow;
+}
+
+input.ng-invalid{
+	background-color: red;
+}

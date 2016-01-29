@@ -11,3 +11,9 @@ $(document).ready(function() {
     }
   });
 });
+
+function goTo()
+{
+	  console.log("They typed in " + link_id);
+    //location.href = document.getElementById('link_id').value;
+}

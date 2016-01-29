@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="worktodoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="family.js"></script>
+    <link rel="stylesheet" href="family.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  </head>
+  <body>
+    <h1>Family Ordinace Tracker</h1>
+
+    <div ng-hide="myCheck">
+    How it works in 3 easy steps:
+    <ol>
+    <li>Enter in a deceased family member's name who needs work done for them</li>
+    <li>When that person's work is done, click on the checkbox next to their names to register that thier work has been completed</li>
+    <li>Click the 'Record' button to send this information to Church Headquarters</li>
+    </ol> 
+    </div>
+
+    <h2>Hide the instructions: <input type="checkbox" ng-model="myCheck"></h2>
+
+    <br>
+
+    <div ng-controller="TodoListController as todoList">
+      <span>{{todoList.remaining()}} out of {{todoList.todos.length}} family members still have work to be done for them.</span>
+      [ <a href="" ng-click="todoList.archive()">Record the ordinances</a> ]
+      <ul class="unstyled">
+        <li ng-repeat="todo in todoList.todos">
+          <input type="checkbox" ng-model="todo.done">
+          <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li>
+      </ul>
+      <form ng-submit="todoList.addTodo()">
+        <input type="text" ng-model="todoList.todoText"  size="30"
+               placeholder="Enter a deceased family member's name." required>
+        <input class="btn-primary" type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
