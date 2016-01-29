@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="style.css">
@@ -76,25 +77,26 @@ $(document).ready(function () {
 
 </script>
 <!--apigee lets you make all the url graph calls to websites-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <embed src="SF2 ryu wav.wav" autostart="true" loop="true"
+  width="2" height="0">-
+  </embed>
 
-<embed src="SF2 ryu wav.wav" autostart="true" loop="true"
-width="2" height="0">
-</embed>
+  <form>
 
-<form>
+  <h1>Current Weather Checker</h1>
+  Enter A Utah City: <input type="text" id="cityfield" value=""><br>
+  Suggestions: <br><span id="txtHint">Empty</span><br>
+  <input id="button" type="submit" value="Submit">
+  </form>
 
-<h1>Current Weather Checker</h1>
-Enter A Utah City: <input type="text" id="cityfield" value=""><br>
-Suggestions: <br><span id="txtHint">Empty, but at least there's some sick music playing on this website, so turn up the speakers!</span><br>
-<input id="button" type="submit" value="Submit">
-</form>
-
-<h2>City</h2>
-<textarea id="dispcity">No City Selected</textarea>
-<p>Current Weather</p>
-<div1 id="weather">No information available</div1>
-
+  <br>
+  <br>
+  <h2>City</h2>
+  <textarea id="dispcity">No City Selected</textarea>
+  <p>Current Weather</p>
+  <div1 id="weather">No information available</div1>
 </body>
 </html>

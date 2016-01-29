@@ -1,0 +1,45 @@
+ body {
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: lightblue;
+  /*Could we possibly change the background to an arial shot of their destination!?!*/
+  
+}
+
+.box{
+  margin: 100px auto;
+  width: 500px;
+  height: 50px;
+}
+
+p{
+	text-align: center
+}
+
+ div1 {
+  width: 33vw;
+  height:100vh;
+  float: left;
+  background-color: transparent;
+  text-align: center;
+  padding:2px;
+}
+
+div2 {
+  width: 32vw;
+  height:100vh;
+  float: left;
+  background-color: transparent;
+  text-align: center;
+  padding:2px;
+}
+
+div3 {
+  width: 33vw;
+  height:100vh;
+  float: left;
+  background-color: transparent;
+  text-align: center;
+  padding:0px;
+}
