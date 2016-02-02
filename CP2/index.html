@@ -1,23 +1,53 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <link type="text/css" rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <title>Vacation Application</title>
+  <head>
+    <style>body{background:url(https://thewelltravelledpostcard.files.wordpress.com/2013/12/madrid-2.jpg?w=1200) no-repeat center center fixed;background-size:100% auto;text-align:center;font-family:"Century Gothic",CenturyGothic,Geneva,AppleGothic,sans-serif}h1{color:#00f;text-align:center;font-size:60px;text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15)}h2{text-align:center;color:#333;font-family:"Helvetica Neue",Arial,sans-serif;font-size:16px;font-weight:300;line-height:1.5625;margin-bottom:15px}#One{width:33vw;height:100vh;float:left;background-color:transparent;text-align:center;padding:1px;border-radius:25px}#Two{width:31vw;height:100vh;float:left;background-color:transparent;text-align:center;padding:1px;border-radius:25px}#Three{width:33vw;height:100vh;float:left;background-color: transparent
+    text-align: center;padding:1px;border-radius:25px}#T{background-color:rgba(255,255,255,.5);border-radius:25px;width:30%;margin:auto}</style>
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <style>div.box{text-align:center;margin:0 auto}div.infobox{border:1px #000 solid}table{border:1px #000 solid;text-align:center;margin-left:auto;margin-right:auto}body{margin-top:300px}</style>
+    <title>Vacation Assistant</title>
+  </head>
+  
+  <body class="main">
+   
+    
+    <script>google.load('search','1');function search()
+{$("body").css("margin-top","50px");$(".infobox").css("background-color","rgba(255,255,255,0.7)");var searchTravel=new google.search.SearchControl();var searchHotel=new google.search.SearchControl();var searchAttractions=new google.search.SearchControl();searchTravel.addSearcher(new google.search.WebSearch());searchHotel.addSearcher(new google.search.WebSearch());searchAttractions.addSearcher(new google.search.WebSearch());searchTravel.draw(document.getElementById("airfare"));searchHotel.draw(document.getElementById("hotel"));searchAttractions.draw(document.getElementById("attractions"));var base=document.getElementById("search_field").value
+var base_travel=base+" airfare"
+var base_hotels=base+" hotels"
+var base_attractions=base+" attractions"
+searchTravel.execute([base_travel]);searchHotel.execute([base_hotels]);searchAttractions.execute([base_attractions]);}</script>
 
-</head>
-
-<body>
-<script src="./script.js"></script>
-  <h1>Vacation Application</h1>
-  <h2>Your personal and professional travel guide</h2>
-  <br>
-  <h3>Search your destination here for information</h3>
-  <input type='text' id='link_id'>
-  <input type='button' id='link' value='Search' onClick='javascript:goTo()'>
-
-  <div1 id = "myid">This information should be covered up by the javascript</div1>
-  <div2>No information available</div2>
-  <div3>Nope information available</div3>
-
-</body>
+    <div id="T">
+      <h1>The Vacation Assistant</h1>
+      <h2>Your personal and professional travel guide.</h2>
+      <br>
+      <h2>Search your destination here for lots of information!</h2>
+      <input type="search" id="search_field" placeholder="Search..."/><button onclick="search()">Go!</button>
+      <br>
+      <br>
+    </div>
+    
+    <table>
+      <tr>
+	<td><div id="airfare" class="infobox"></div></td>
+	<td><div id="hotel" class="infobox"></div></td>
+	<td><div id="attractions" class="infobox"></div></td>
+      </tr>
+    </table>
+  </body>
 </html>
