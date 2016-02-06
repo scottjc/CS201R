@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- include our dependency on angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+  <meta charset="utf-8">
+  <title>User Avatar Loader</title>
+</head>
+<body id=body1>
+  <script src = "script.js"></script>
+  <div ng-app='app' ng-controller='mainCtrl'>
+    <h1 id = h1>User Avatar Loader</h1>
+    <h2 id = h2>Enter user information and images here to display them</h2>
+    <h3 id = h3> A random image will be assigned to you if you dont define one to use
+    </h3>
+    <form name='userForm' ng-submit='addNew(userForm)'>
+      <input placeholder='Name here' ng-model='userForm.name'/>
+      <input placeholder='Image Url here' ng-model='userForm.url'/>
+      <button type='submit'>Add New</button>
+    </form>
+    
+    <ul class='User-list'>
+      <li ng-repeat='user in users'>
+        <div class='Avatar'>
+          <avatar user='user' />
+          <h4>{{user.name}}</h4>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
