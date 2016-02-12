@@ -1,0 +1,675 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/bitnami/nodejs/bin/.node.bin',
+1 verbose cli   '/opt/bitnami/nodejs/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'node-static' ]
+2 info using npm@3.3.12
+3 info using node@v5.1.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData node-static
+8 silly fetchNamedPackageData node-static
+9 silly mapToRegistry name node-static
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/node-static
+13 verbose request uri https://registry.npmjs.org/node-static
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 5:36:33 PM
+16 verbose request id ba545e37aeac1c77
+17 http request GET https://registry.npmjs.org/node-static
+18 http 200 https://registry.npmjs.org/node-static
+19 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 verbose headers   etag: '"6OMG4O6MIBR735E0NNQPSWXAC"',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '33512',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Tue, 09 Feb 2016 17:35:23 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '142',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-sjc3127-SJC',
+19 verbose headers   'x-cache': 'HIT',
+19 verbose headers   'x-cache-hits': '1',
+19 verbose headers   'x-timer': 'S1455039323.724461,VS0,VE0',
+19 verbose headers   vary: 'Accept' }
+20 silly get cb [ 200,
+20 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 silly get     etag: '"6OMG4O6MIBR735E0NNQPSWXAC"',
+20 silly get     'content-type': 'application/json',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '33512',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Tue, 09 Feb 2016 17:35:23 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '142',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-sjc3127-SJC',
+20 silly get     'x-cache': 'HIT',
+20 silly get     'x-cache-hits': '1',
+20 silly get     'x-timer': 'S1455039323.724461,VS0,VE0',
+20 silly get     vary: 'Accept' } ]
+21 verbose get saving node-static to /home/bitnami/.npm/registry.npmjs.org/node-static/.cache.json
+22 verbose makeDirectory /home/bitnami/.npm creation not in flight; initializing
+23 silly makeDirectory /home/bitnami/.npm uid: 1000 gid: 1000
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule node-static@0.7.7 checking installable status
+37 silly cache add args [ 'node-static', null ]
+38 verbose cache add spec node-static
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'node-static',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'node-static',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: '*',
+39 silly cache add   type: 'range' }
+40 silly addNamed node-static@*
+41 verbose addNamed "*" is a valid semver range for node-static
+42 silly addNameRange { name: 'node-static', range: '*', hasData: false }
+43 silly mapToRegistry name node-static
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/node-static
+47 verbose addNameRange registry:https://registry.npmjs.org/node-static not in flight; fetching
+48 verbose get https://registry.npmjs.org/node-static not expired, no request
+49 silly addNameRange number 2 { name: 'node-static', range: '*', hasData: true }
+50 silly addNameRange versions [ 'node-static',
+50 silly addNameRange   [ '0.5.6',
+50 silly addNameRange     '0.5.7',
+50 silly addNameRange     '0.5.8',
+50 silly addNameRange     '0.5.9',
+50 silly addNameRange     '0.6.0',
+50 silly addNameRange     '0.6.1',
+50 silly addNameRange     '0.6.2',
+50 silly addNameRange     '0.6.3',
+50 silly addNameRange     '0.6.4',
+50 silly addNameRange     '0.6.5',
+50 silly addNameRange     '0.6.6',
+50 silly addNameRange     '0.6.7',
+50 silly addNameRange     '0.6.8',
+50 silly addNameRange     '0.6.9',
+50 silly addNameRange     '0.7.0',
+50 silly addNameRange     '0.7.1',
+50 silly addNameRange     '0.7.2',
+50 silly addNameRange     '0.7.3',
+50 silly addNameRange     '0.7.4',
+50 silly addNameRange     '0.7.5',
+50 silly addNameRange     '0.7.6',
+50 silly addNameRange     '0.7.7' ] ]
+51 silly addNamed node-static@0.7.7
+52 verbose addNamed "0.7.7" is a plain semver version for node-static
+53 silly mapToRegistry name node-static
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry uri https://registry.npmjs.org/node-static
+57 verbose addRemoteTarball https://registry.npmjs.org/node-static/-/node-static-0.7.7.tgz not in flight; adding
+58 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-static/-/node-static-0.7.7.tgz',
+58 verbose addRemoteTarball   '93081d834d9bd9d83737798df3da3cd538e8908a' ]
+59 info retry fetch attempt 1 at 5:36:34 PM
+60 info attempt registry request try #1 at 5:36:34 PM
+61 http fetch GET https://registry.npmjs.org/node-static/-/node-static-0.7.7.tgz
+62 http fetch 200 https://registry.npmjs.org/node-static/-/node-static-0.7.7.tgz
+63 silly fetchAndShaCheck shasum 93081d834d9bd9d83737798df3da3cd538e8908a
+64 verbose addTmpTarball /tmp/npm-28443-59c594c2/registry.npmjs.org/node-static/-/node-static-0.7.7.tgz not in flight; adding
+65 verbose addTmpTarball already have metadata; skipping unpack for node-static@0.7.7
+66 silly cache afterAdd node-static@0.7.7
+67 verbose afterAdd /home/bitnami/.npm/node-static/0.7.7/package/package.json not in flight; writing
+68 verbose afterAdd /home/bitnami/.npm/node-static/0.7.7/package/package.json written
+69 silly fetchNamedPackageData optimist
+70 silly mapToRegistry name optimist
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npmjs.org/
+73 silly mapToRegistry uri https://registry.npmjs.org/optimist
+74 silly fetchNamedPackageData colors
+75 silly mapToRegistry name colors
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/colors
+79 silly fetchNamedPackageData mime
+80 silly mapToRegistry name mime
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npmjs.org/
+83 silly mapToRegistry uri https://registry.npmjs.org/mime
+84 verbose request uri https://registry.npmjs.org/optimist
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 5:36:34 PM
+87 http request GET https://registry.npmjs.org/optimist
+88 verbose request uri https://registry.npmjs.org/colors
+89 verbose request no auth needed
+90 info attempt registry request try #1 at 5:36:34 PM
+91 http request GET https://registry.npmjs.org/colors
+92 verbose request uri https://registry.npmjs.org/mime
+93 verbose request no auth needed
+94 info attempt registry request try #1 at 5:36:34 PM
+95 http request GET https://registry.npmjs.org/mime
+96 http 200 https://registry.npmjs.org/colors
+97 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+97 verbose headers   etag: '"DYA5FN0PKX161BOQKEVSBXY2U"',
+97 verbose headers   'content-type': 'application/json',
+97 verbose headers   'cache-control': 'max-age=300',
+97 verbose headers   'content-length': '20793',
+97 verbose headers   'accept-ranges': 'bytes',
+97 verbose headers   date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+97 verbose headers   via: '1.1 varnish',
+97 verbose headers   age: '286',
+97 verbose headers   connection: 'keep-alive',
+97 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
+97 verbose headers   'x-cache': 'HIT',
+97 verbose headers   'x-cache-hits': '15',
+97 verbose headers   'x-timer': 'S1455039324.039719,VS0,VE0',
+97 verbose headers   vary: 'Accept' }
+98 silly get cb [ 200,
+98 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+98 silly get     etag: '"DYA5FN0PKX161BOQKEVSBXY2U"',
+98 silly get     'content-type': 'application/json',
+98 silly get     'cache-control': 'max-age=300',
+98 silly get     'content-length': '20793',
+98 silly get     'accept-ranges': 'bytes',
+98 silly get     date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+98 silly get     via: '1.1 varnish',
+98 silly get     age: '286',
+98 silly get     connection: 'keep-alive',
+98 silly get     'x-served-by': 'cache-sjc3135-SJC',
+98 silly get     'x-cache': 'HIT',
+98 silly get     'x-cache-hits': '15',
+98 silly get     'x-timer': 'S1455039324.039719,VS0,VE0',
+98 silly get     vary: 'Accept' } ]
+99 verbose get saving colors to /home/bitnami/.npm/registry.npmjs.org/colors/.cache.json
+100 http 200 https://registry.npmjs.org/mime
+101 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+101 verbose headers   etag: '"8A013D3GZK3K4MFIEQG78TZTH"',
+101 verbose headers   'content-type': 'application/json',
+101 verbose headers   'cache-control': 'max-age=300',
+101 verbose headers   'content-length': '20254',
+101 verbose headers   'accept-ranges': 'bytes',
+101 verbose headers   date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+101 verbose headers   via: '1.1 varnish',
+101 verbose headers   age: '66',
+101 verbose headers   connection: 'keep-alive',
+101 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+101 verbose headers   'x-cache': 'HIT',
+101 verbose headers   'x-cache-hits': '4',
+101 verbose headers   'x-timer': 'S1455039324.039403,VS0,VE0',
+101 verbose headers   vary: 'Accept' }
+102 silly get cb [ 200,
+102 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+102 silly get     etag: '"8A013D3GZK3K4MFIEQG78TZTH"',
+102 silly get     'content-type': 'application/json',
+102 silly get     'cache-control': 'max-age=300',
+102 silly get     'content-length': '20254',
+102 silly get     'accept-ranges': 'bytes',
+102 silly get     date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+102 silly get     via: '1.1 varnish',
+102 silly get     age: '66',
+102 silly get     connection: 'keep-alive',
+102 silly get     'x-served-by': 'cache-sjc3131-SJC',
+102 silly get     'x-cache': 'HIT',
+102 silly get     'x-cache-hits': '4',
+102 silly get     'x-timer': 'S1455039324.039403,VS0,VE0',
+102 silly get     vary: 'Accept' } ]
+103 verbose get saving mime to /home/bitnami/.npm/registry.npmjs.org/mime/.cache.json
+104 silly resolveWithNewModule colors@1.1.2 checking installable status
+105 silly cache add args [ 'colors@>=0.6.0', null ]
+106 verbose cache add spec colors@>=0.6.0
+107 silly cache add parsed spec Result {
+107 silly cache add   raw: 'colors@>=0.6.0',
+107 silly cache add   scope: null,
+107 silly cache add   name: 'colors',
+107 silly cache add   rawSpec: '>=0.6.0',
+107 silly cache add   spec: '>=0.6.0',
+107 silly cache add   type: 'range' }
+108 silly addNamed colors@>=0.6.0
+109 verbose addNamed ">=0.6.0" is a valid semver range for colors
+110 silly addNameRange { name: 'colors', range: '>=0.6.0', hasData: false }
+111 silly mapToRegistry name colors
+112 silly mapToRegistry using default registry
+113 silly mapToRegistry registry https://registry.npmjs.org/
+114 silly mapToRegistry uri https://registry.npmjs.org/colors
+115 verbose addNameRange registry:https://registry.npmjs.org/colors not in flight; fetching
+116 silly resolveWithNewModule mime@1.3.4 checking installable status
+117 silly cache add args [ 'mime@>=1.2.9', null ]
+118 verbose cache add spec mime@>=1.2.9
+119 silly cache add parsed spec Result {
+119 silly cache add   raw: 'mime@>=1.2.9',
+119 silly cache add   scope: null,
+119 silly cache add   name: 'mime',
+119 silly cache add   rawSpec: '>=1.2.9',
+119 silly cache add   spec: '>=1.2.9',
+119 silly cache add   type: 'range' }
+120 silly addNamed mime@>=1.2.9
+121 verbose addNamed ">=1.2.9" is a valid semver range for mime
+122 silly addNameRange { name: 'mime', range: '>=1.2.9', hasData: false }
+123 silly mapToRegistry name mime
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry uri https://registry.npmjs.org/mime
+127 verbose addNameRange registry:https://registry.npmjs.org/mime not in flight; fetching
+128 verbose get https://registry.npmjs.org/colors not expired, no request
+129 silly addNameRange number 2 { name: 'colors', range: '>=0.6.0', hasData: true }
+130 silly addNameRange versions [ 'colors',
+130 silly addNameRange   [ '0.3.0',
+130 silly addNameRange     '0.5.0',
+130 silly addNameRange     '0.5.1',
+130 silly addNameRange     '0.6.0',
+130 silly addNameRange     '0.6.0-1',
+130 silly addNameRange     '0.6.1',
+130 silly addNameRange     '0.6.2',
+130 silly addNameRange     '1.0.0',
+130 silly addNameRange     '1.0.1',
+130 silly addNameRange     '1.0.2',
+130 silly addNameRange     '1.0.3',
+130 silly addNameRange     '1.1.0',
+130 silly addNameRange     '1.1.1',
+130 silly addNameRange     '1.1.2' ] ]
+131 silly addNamed colors@1.1.2
+132 verbose addNamed "1.1.2" is a plain semver version for colors
+133 verbose get https://registry.npmjs.org/mime not expired, no request
+134 silly addNameRange number 2 { name: 'mime', range: '>=1.2.9', hasData: true }
+135 silly addNameRange versions [ 'mime',
+135 silly addNameRange   [ '1.0.0',
+135 silly addNameRange     '1.1.0',
+135 silly addNameRange     '1.2.1',
+135 silly addNameRange     '1.2.2',
+135 silly addNameRange     '1.2.3',
+135 silly addNameRange     '1.2.4',
+135 silly addNameRange     '1.2.5',
+135 silly addNameRange     '1.2.6',
+135 silly addNameRange     '1.2.7',
+135 silly addNameRange     '1.2.8',
+135 silly addNameRange     '1.2.9',
+135 silly addNameRange     '1.2.10',
+135 silly addNameRange     '1.2.11',
+135 silly addNameRange     '1.3.0',
+135 silly addNameRange     '1.3.2',
+135 silly addNameRange     '1.3.3',
+135 silly addNameRange     '1.3.4' ] ]
+136 silly addNamed mime@1.3.4
+137 verbose addNamed "1.3.4" is a plain semver version for mime
+138 silly mapToRegistry name colors
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry https://registry.npmjs.org/
+141 silly mapToRegistry uri https://registry.npmjs.org/colors
+142 verbose addRemoteTarball https://registry.npmjs.org/colors/-/colors-1.1.2.tgz not in flight; adding
+143 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-1.1.2.tgz',
+143 verbose addRemoteTarball   '168a4701756b6a7f51a12ce0c97bfa28c084ed63' ]
+144 silly mapToRegistry name mime
+145 silly mapToRegistry using default registry
+146 silly mapToRegistry registry https://registry.npmjs.org/
+147 silly mapToRegistry uri https://registry.npmjs.org/mime
+148 verbose addRemoteTarball https://registry.npmjs.org/mime/-/mime-1.3.4.tgz not in flight; adding
+149 verbose addRemoteTarball [ 'https://registry.npmjs.org/mime/-/mime-1.3.4.tgz',
+149 verbose addRemoteTarball   '115f9e3b6b3daf2959983cb38f149a2d40eb5d53' ]
+150 http 200 https://registry.npmjs.org/optimist
+151 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+151 verbose headers   etag: '"EGJZ5OIEC5WVU3QA6H2WMCXJO"',
+151 verbose headers   'content-type': 'application/json',
+151 verbose headers   'cache-control': 'max-age=300',
+151 verbose headers   'content-length': '46498',
+151 verbose headers   'accept-ranges': 'bytes',
+151 verbose headers   date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+151 verbose headers   via: '1.1 varnish',
+151 verbose headers   age: '102',
+151 verbose headers   connection: 'keep-alive',
+151 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+151 verbose headers   'x-cache': 'HIT',
+151 verbose headers   'x-cache-hits': '12',
+151 verbose headers   'x-timer': 'S1455039324.040022,VS0,VE0',
+151 verbose headers   vary: 'Accept' }
+152 silly get cb [ 200,
+152 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+152 silly get     etag: '"EGJZ5OIEC5WVU3QA6H2WMCXJO"',
+152 silly get     'content-type': 'application/json',
+152 silly get     'cache-control': 'max-age=300',
+152 silly get     'content-length': '46498',
+152 silly get     'accept-ranges': 'bytes',
+152 silly get     date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+152 silly get     via: '1.1 varnish',
+152 silly get     age: '102',
+152 silly get     connection: 'keep-alive',
+152 silly get     'x-served-by': 'cache-sjc3131-SJC',
+152 silly get     'x-cache': 'HIT',
+152 silly get     'x-cache-hits': '12',
+152 silly get     'x-timer': 'S1455039324.040022,VS0,VE0',
+152 silly get     vary: 'Accept' } ]
+153 verbose get saving optimist to /home/bitnami/.npm/registry.npmjs.org/optimist/.cache.json
+154 info retry fetch attempt 1 at 5:36:34 PM
+155 info attempt registry request try #1 at 5:36:34 PM
+156 http fetch GET https://registry.npmjs.org/colors/-/colors-1.1.2.tgz
+157 info retry fetch attempt 1 at 5:36:34 PM
+158 info attempt registry request try #1 at 5:36:34 PM
+159 http fetch GET https://registry.npmjs.org/mime/-/mime-1.3.4.tgz
+160 silly resolveWithNewModule optimist@0.6.1 checking installable status
+161 silly cache add args [ 'optimist@>=0.3.4', null ]
+162 verbose cache add spec optimist@>=0.3.4
+163 silly cache add parsed spec Result {
+163 silly cache add   raw: 'optimist@>=0.3.4',
+163 silly cache add   scope: null,
+163 silly cache add   name: 'optimist',
+163 silly cache add   rawSpec: '>=0.3.4',
+163 silly cache add   spec: '>=0.3.4',
+163 silly cache add   type: 'range' }
+164 silly addNamed optimist@>=0.3.4
+165 verbose addNamed ">=0.3.4" is a valid semver range for optimist
+166 silly addNameRange { name: 'optimist', range: '>=0.3.4', hasData: false }
+167 silly mapToRegistry name optimist
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry uri https://registry.npmjs.org/optimist
+171 verbose addNameRange registry:https://registry.npmjs.org/optimist not in flight; fetching
+172 verbose get https://registry.npmjs.org/optimist not expired, no request
+173 silly addNameRange number 2 { name: 'optimist', range: '>=0.3.4', hasData: true }
+174 silly addNameRange versions [ 'optimist',
+174 silly addNameRange   [ '0.0.1',
+174 silly addNameRange     '0.0.2',
+174 silly addNameRange     '0.0.4',
+174 silly addNameRange     '0.0.5',
+174 silly addNameRange     '0.0.6',
+174 silly addNameRange     '0.0.7',
+174 silly addNameRange     '0.1.0',
+174 silly addNameRange     '0.1.1',
+174 silly addNameRange     '0.1.2',
+174 silly addNameRange     '0.1.3',
+174 silly addNameRange     '0.1.4',
+174 silly addNameRange     '0.1.5',
+174 silly addNameRange     '0.1.6',
+174 silly addNameRange     '0.1.7',
+174 silly addNameRange     '0.1.8',
+174 silly addNameRange     '0.1.9',
+174 silly addNameRange     '0.0.3',
+174 silly addNameRange     '0.2.0',
+174 silly addNameRange     '0.2.1',
+174 silly addNameRange     '0.2.2',
+174 silly addNameRange     '0.2.3',
+174 silly addNameRange     '0.2.4',
+174 silly addNameRange     '0.2.5',
+174 silly addNameRange     '0.2.6',
+174 silly addNameRange     '0.2.7',
+174 silly addNameRange     '0.2.8',
+174 silly addNameRange     '0.3.0',
+174 silly addNameRange     '0.3.1',
+174 silly addNameRange     '0.3.3',
+174 silly addNameRange     '0.3.4',
+174 silly addNameRange     '0.3.5',
+174 silly addNameRange     '0.3.6',
+174 silly addNameRange     '0.3.7',
+174 silly addNameRange     '0.4.0',
+174 silly addNameRange     '0.5.0',
+174 silly addNameRange     '0.5.1',
+174 silly addNameRange     '0.5.2',
+174 silly addNameRange     '0.6.0',
+174 silly addNameRange     '0.6.1' ] ]
+175 silly addNamed optimist@0.6.1
+176 verbose addNamed "0.6.1" is a plain semver version for optimist
+177 silly mapToRegistry name optimist
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry uri https://registry.npmjs.org/optimist
+181 verbose addRemoteTarball https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz not in flight; adding
+182 verbose addRemoteTarball [ 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz',
+182 verbose addRemoteTarball   'da3ea74686fa21a19a111c326e90eb15a0196686' ]
+183 info retry fetch attempt 1 at 5:36:34 PM
+184 info attempt registry request try #1 at 5:36:34 PM
+185 http fetch GET https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+186 http fetch 200 https://registry.npmjs.org/mime/-/mime-1.3.4.tgz
+187 http fetch 200 https://registry.npmjs.org/colors/-/colors-1.1.2.tgz
+188 silly fetchAndShaCheck shasum 115f9e3b6b3daf2959983cb38f149a2d40eb5d53
+189 silly fetchAndShaCheck shasum 168a4701756b6a7f51a12ce0c97bfa28c084ed63
+190 verbose addTmpTarball /tmp/npm-28443-59c594c2/registry.npmjs.org/mime/-/mime-1.3.4.tgz not in flight; adding
+191 verbose addTmpTarball already have metadata; skipping unpack for mime@1.3.4
+192 verbose addTmpTarball /tmp/npm-28443-59c594c2/registry.npmjs.org/colors/-/colors-1.1.2.tgz not in flight; adding
+193 verbose addTmpTarball already have metadata; skipping unpack for colors@1.1.2
+194 silly cache afterAdd mime@1.3.4
+195 verbose afterAdd /home/bitnami/.npm/mime/1.3.4/package/package.json not in flight; writing
+196 silly cache afterAdd colors@1.1.2
+197 verbose afterAdd /home/bitnami/.npm/colors/1.1.2/package/package.json not in flight; writing
+198 verbose afterAdd /home/bitnami/.npm/mime/1.3.4/package/package.json written
+199 verbose afterAdd /home/bitnami/.npm/colors/1.1.2/package/package.json written
+200 http fetch 200 https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+201 silly fetchAndShaCheck shasum da3ea74686fa21a19a111c326e90eb15a0196686
+202 verbose addTmpTarball /tmp/npm-28443-59c594c2/registry.npmjs.org/optimist/-/optimist-0.6.1.tgz not in flight; adding
+203 verbose addTmpTarball already have metadata; skipping unpack for optimist@0.6.1
+204 silly cache afterAdd optimist@0.6.1
+205 verbose afterAdd /home/bitnami/.npm/optimist/0.6.1/package/package.json not in flight; writing
+206 verbose afterAdd /home/bitnami/.npm/optimist/0.6.1/package/package.json written
+207 silly fetchNamedPackageData wordwrap
+208 silly mapToRegistry name wordwrap
+209 silly mapToRegistry using default registry
+210 silly mapToRegistry registry https://registry.npmjs.org/
+211 silly mapToRegistry uri https://registry.npmjs.org/wordwrap
+212 silly fetchNamedPackageData minimist
+213 silly mapToRegistry name minimist
+214 silly mapToRegistry using default registry
+215 silly mapToRegistry registry https://registry.npmjs.org/
+216 silly mapToRegistry uri https://registry.npmjs.org/minimist
+217 verbose request uri https://registry.npmjs.org/wordwrap
+218 verbose request no auth needed
+219 info attempt registry request try #1 at 5:36:34 PM
+220 http request GET https://registry.npmjs.org/wordwrap
+221 verbose request uri https://registry.npmjs.org/minimist
+222 verbose request no auth needed
+223 info attempt registry request try #1 at 5:36:34 PM
+224 http request GET https://registry.npmjs.org/minimist
+225 http 200 https://registry.npmjs.org/wordwrap
+226 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+226 verbose headers   etag: '"18ZMVFL4XQSNT8JYI76ECE9BV"',
+226 verbose headers   'content-type': 'application/json',
+226 verbose headers   'cache-control': 'max-age=300',
+226 verbose headers   'content-length': '6806',
+226 verbose headers   'accept-ranges': 'bytes',
+226 verbose headers   date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+226 verbose headers   via: '1.1 varnish',
+226 verbose headers   age: '20',
+226 verbose headers   connection: 'keep-alive',
+226 verbose headers   'x-served-by': 'cache-sjc3126-SJC',
+226 verbose headers   'x-cache': 'HIT',
+226 verbose headers   'x-cache-hits': '2',
+226 verbose headers   'x-timer': 'S1455039324.318874,VS0,VE0',
+226 verbose headers   vary: 'Accept' }
+227 silly get cb [ 200,
+227 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+227 silly get     etag: '"18ZMVFL4XQSNT8JYI76ECE9BV"',
+227 silly get     'content-type': 'application/json',
+227 silly get     'cache-control': 'max-age=300',
+227 silly get     'content-length': '6806',
+227 silly get     'accept-ranges': 'bytes',
+227 silly get     date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+227 silly get     via: '1.1 varnish',
+227 silly get     age: '20',
+227 silly get     connection: 'keep-alive',
+227 silly get     'x-served-by': 'cache-sjc3126-SJC',
+227 silly get     'x-cache': 'HIT',
+227 silly get     'x-cache-hits': '2',
+227 silly get     'x-timer': 'S1455039324.318874,VS0,VE0',
+227 silly get     vary: 'Accept' } ]
+228 verbose get saving wordwrap to /home/bitnami/.npm/registry.npmjs.org/wordwrap/.cache.json
+229 silly resolveWithNewModule wordwrap@0.0.3 checking installable status
+230 silly cache add args [ 'wordwrap@~0.0.2', null ]
+231 verbose cache add spec wordwrap@~0.0.2
+232 silly cache add parsed spec Result {
+232 silly cache add   raw: 'wordwrap@~0.0.2',
+232 silly cache add   scope: null,
+232 silly cache add   name: 'wordwrap',
+232 silly cache add   rawSpec: '~0.0.2',
+232 silly cache add   spec: '>=0.0.2 <0.1.0',
+232 silly cache add   type: 'range' }
+233 silly addNamed wordwrap@>=0.0.2 <0.1.0
+234 verbose addNamed ">=0.0.2 <0.1.0" is a valid semver range for wordwrap
+235 silly addNameRange { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: false }
+236 silly mapToRegistry name wordwrap
+237 silly mapToRegistry using default registry
+238 silly mapToRegistry registry https://registry.npmjs.org/
+239 silly mapToRegistry uri https://registry.npmjs.org/wordwrap
+240 verbose addNameRange registry:https://registry.npmjs.org/wordwrap not in flight; fetching
+241 verbose get https://registry.npmjs.org/wordwrap not expired, no request
+242 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: true }
+243 silly addNameRange versions [ 'wordwrap', [ '0.0.1', '0.0.2', '0.0.3', '1.0.0' ] ]
+244 silly addNamed wordwrap@0.0.3
+245 verbose addNamed "0.0.3" is a plain semver version for wordwrap
+246 silly mapToRegistry name wordwrap
+247 silly mapToRegistry using default registry
+248 silly mapToRegistry registry https://registry.npmjs.org/
+249 silly mapToRegistry uri https://registry.npmjs.org/wordwrap
+250 verbose addRemoteTarball https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz not in flight; adding
+251 verbose addRemoteTarball [ 'https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz',
+251 verbose addRemoteTarball   'a3d5da6cd5c0bc0008d37234bbaf1bed63059107' ]
+252 info retry fetch attempt 1 at 5:36:34 PM
+253 info attempt registry request try #1 at 5:36:34 PM
+254 http fetch GET https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz
+255 http 200 https://registry.npmjs.org/minimist
+256 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+256 verbose headers   etag: '"33Q5NFWRXEL947VB7A1QVINGS"',
+256 verbose headers   'content-type': 'application/json',
+256 verbose headers   'cache-control': 'max-age=300',
+256 verbose headers   'content-length': '27580',
+256 verbose headers   'accept-ranges': 'bytes',
+256 verbose headers   date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+256 verbose headers   via: '1.1 varnish',
+256 verbose headers   age: '158',
+256 verbose headers   connection: 'keep-alive',
+256 verbose headers   'x-served-by': 'cache-sjc3130-SJC',
+256 verbose headers   'x-cache': 'HIT',
+256 verbose headers   'x-cache-hits': '29',
+256 verbose headers   'x-timer': 'S1455039324.318606,VS0,VE0',
+256 verbose headers   vary: 'Accept' }
+257 silly get cb [ 200,
+257 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+257 silly get     etag: '"33Q5NFWRXEL947VB7A1QVINGS"',
+257 silly get     'content-type': 'application/json',
+257 silly get     'cache-control': 'max-age=300',
+257 silly get     'content-length': '27580',
+257 silly get     'accept-ranges': 'bytes',
+257 silly get     date: 'Tue, 09 Feb 2016 17:35:24 GMT',
+257 silly get     via: '1.1 varnish',
+257 silly get     age: '158',
+257 silly get     connection: 'keep-alive',
+257 silly get     'x-served-by': 'cache-sjc3130-SJC',
+257 silly get     'x-cache': 'HIT',
+257 silly get     'x-cache-hits': '29',
+257 silly get     'x-timer': 'S1455039324.318606,VS0,VE0',
+257 silly get     vary: 'Accept' } ]
+258 verbose get saving minimist to /home/bitnami/.npm/registry.npmjs.org/minimist/.cache.json
+259 silly resolveWithNewModule minimist@0.0.10 checking installable status
+260 silly cache add args [ 'minimist@~0.0.1', null ]
+261 verbose cache add spec minimist@~0.0.1
+262 silly cache add parsed spec Result {
+262 silly cache add   raw: 'minimist@~0.0.1',
+262 silly cache add   scope: null,
+262 silly cache add   name: 'minimist',
+262 silly cache add   rawSpec: '~0.0.1',
+262 silly cache add   spec: '>=0.0.1 <0.1.0',
+262 silly cache add   type: 'range' }
+263 silly addNamed minimist@>=0.0.1 <0.1.0
+264 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for minimist
+265 silly addNameRange { name: 'minimist', range: '>=0.0.1 <0.1.0', hasData: false }
+266 silly mapToRegistry name minimist
+267 silly mapToRegistry using default registry
+268 silly mapToRegistry registry https://registry.npmjs.org/
+269 silly mapToRegistry uri https://registry.npmjs.org/minimist
+270 verbose addNameRange registry:https://registry.npmjs.org/minimist not in flight; fetching
+271 verbose get https://registry.npmjs.org/minimist not expired, no request
+272 silly addNameRange number 2 { name: 'minimist', range: '>=0.0.1 <0.1.0', hasData: true }
+273 silly addNameRange versions [ 'minimist',
+273 silly addNameRange   [ '0.0.0',
+273 silly addNameRange     '0.0.1',
+273 silly addNameRange     '0.0.2',
+273 silly addNameRange     '0.0.3',
+273 silly addNameRange     '0.0.4',
+273 silly addNameRange     '0.0.5',
+273 silly addNameRange     '0.0.6',
+273 silly addNameRange     '0.0.7',
+273 silly addNameRange     '0.0.8',
+273 silly addNameRange     '0.0.9',
+273 silly addNameRange     '0.0.10',
+273 silly addNameRange     '0.1.0',
+273 silly addNameRange     '0.2.0',
+273 silly addNameRange     '1.0.0',
+273 silly addNameRange     '1.1.0',
+273 silly addNameRange     '1.1.1',
+273 silly addNameRange     '1.1.2',
+273 silly addNameRange     '1.1.3',
+273 silly addNameRange     '1.2.0' ] ]
+274 silly addNamed minimist@0.0.10
+275 verbose addNamed "0.0.10" is a plain semver version for minimist
+276 silly mapToRegistry name minimist
+277 silly mapToRegistry using default registry
+278 silly mapToRegistry registry https://registry.npmjs.org/
+279 silly mapToRegistry uri https://registry.npmjs.org/minimist
+280 verbose addRemoteTarball https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz not in flight; adding
+281 verbose addRemoteTarball [ 'https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz',
+281 verbose addRemoteTarball   'de3f98543dbf96082be48ad1a0c7cda836301dcf' ]
+282 info retry fetch attempt 1 at 5:36:34 PM
+283 info attempt registry request try #1 at 5:36:34 PM
+284 http fetch GET https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz
+285 http fetch 200 https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz
+286 silly fetchAndShaCheck shasum de3f98543dbf96082be48ad1a0c7cda836301dcf
+287 verbose addTmpTarball /tmp/npm-28443-59c594c2/registry.npmjs.org/minimist/-/minimist-0.0.10.tgz not in flight; adding
+288 verbose addTmpTarball already have metadata; skipping unpack for minimist@0.0.10
+289 silly cache afterAdd minimist@0.0.10
+290 verbose afterAdd /home/bitnami/.npm/minimist/0.0.10/package/package.json not in flight; writing
+291 verbose afterAdd /home/bitnami/.npm/minimist/0.0.10/package/package.json written
+292 http fetch 200 https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz
+293 silly fetchAndShaCheck shasum a3d5da6cd5c0bc0008d37234bbaf1bed63059107
+294 verbose addTmpTarball /tmp/npm-28443-59c594c2/registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz not in flight; adding
+295 verbose addTmpTarball already have metadata; skipping unpack for wordwrap@0.0.3
+296 silly cache afterAdd wordwrap@0.0.3
+297 verbose afterAdd /home/bitnami/.npm/wordwrap/0.0.3/package/package.json not in flight; writing
+298 verbose afterAdd /home/bitnami/.npm/wordwrap/0.0.3/package/package.json written
+299 silly loadAllDepsIntoIdealTree Finishing
+300 silly idealTree:prePrune lib
+300 silly idealTree:prePrune └─┬ node-static@0.7.7
+300 silly idealTree:prePrune   ├── colors@1.1.2
+300 silly idealTree:prePrune   ├── mime@1.3.4
+300 silly idealTree:prePrune   ├── minimist@0.0.10
+300 silly idealTree:prePrune   ├── optimist@0.6.1
+300 silly idealTree:prePrune   └── wordwrap@0.0.3
+301 silly loadIdealTree Finishing
+302 silly currentTree lib
+303 silly idealTree lib
+303 silly idealTree └─┬ node-static@0.7.7
+303 silly idealTree   ├── colors@1.1.2
+303 silly idealTree   ├── mime@1.3.4
+303 silly idealTree   ├── minimist@0.0.10
+303 silly idealTree   ├── optimist@0.6.1
+303 silly idealTree   └── wordwrap@0.0.3
+304 silly generateActionsToTake Starting
+305 silly install generateActionsToTake
+306 warn checkPermissions Missing write access to /opt/bitnami/nodejs/lib/node_modules
+307 silly rollbackFailedOptional Starting
+308 silly rollbackFailedOptional Finishing
+309 silly runTopLevelLifecycles Starting
+310 silly runTopLevelLifecycles Finishing
+311 silly install printInstalled
+312 verbose stack Error: EACCES: permission denied, access '/opt/bitnami/nodejs/lib/node_modules'
+312 verbose stack     at Error (native)
+313 verbose cwd /opt/bitnami/apache2/htdocs/201html
+314 error Linux 3.13.0-71-generic
+315 error argv "/opt/bitnami/nodejs/bin/.node.bin" "/opt/bitnami/nodejs/bin/npm" "install" "-g" "node-static"
+316 error node v5.1.1
+317 error npm  v3.3.12
+318 error path /opt/bitnami/nodejs/lib/node_modules
+319 error code EACCES
+320 error errno -13
+321 error syscall access
+322 error Error: EACCES: permission denied, access '/opt/bitnami/nodejs/lib/node_modules'
+322 error     at Error (native)
+322 error  { [Error: EACCES: permission denied, access '/opt/bitnami/nodejs/lib/node_modules']
+322 error   errno: -13,
+322 error   code: 'EACCES',
+322 error   syscall: 'access',
+322 error   path: '/opt/bitnami/nodejs/lib/node_modules' }
+323 error Please try running this command again as root/Administrator.
+324 verbose exit [ -13, true ]
