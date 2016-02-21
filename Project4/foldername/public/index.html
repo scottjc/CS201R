@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style.css">
+<title>City Finder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>//the city.txt file is the json object were getting back
+$(document).ready(function () {
+  $("#cityfield" ).keyup(function() {
+    var url = "https://students.cs.byu.edu/~clement/CS360/ajax/getcity.cgi?q="+$("#cityfield").val();
+    $.getJSON(url,function(data) {
+	var everything;
+  	everything = "<ul1>";
+  	$.each(data, function(i,item) {
+   		everything += "<li1> "+ "-" + data[i].city;
+  	});
+    
+  	everything += "</ul1>";
+    everything += "<br>";
+
+  	$("#txtHint").html(everything);
+  	})
+      .done(function() { console.log('getJSON request succeeded!'); })
+      .fail(function(jqXHR, textStatus, errorThrown) { 
+      console.log('getJSON request failed! ' + textStatus); 
+      console.log("incoming "+jqXHR.responseText);
+  })
+  .always(function() { console.log('getJSON request ended!');
+  })
+  .complete(function() { console.log("complete"); });
+  });
+
+  //edits the textbox by not reseting the page and filling in the box/
+  $("#button").click(function(e){
+    var value = $("#cityfield").val();
+    console.log(value);
+    e.preventDefault();
+    $("#dispcity").text(value);
+
+    <!--make the weather URL call by manipulating the different pieces of it with input-->
+    var myurl= "https://api.wunderground.com/api/b6b1f85c31d9d7bd/geolookup/conditions/q/UT/";
+    myurl += value;
+    myurl += ".json";
+    console.log(myurl);
+    $.ajax({
+      url : myurl,
+      dataType : "jsonp",
+      success : function(parsed_json) {
+        console.log("In the weather JSON");
+        console.log(parsed_json);
+        var location = parsed_json['location']['city'];
+        var temp_string = parsed_json['current_observation']['temperature_string'];
+        var current_weather = parsed_json['current_observation']['weather'];
+        var current_hum = parsed_json['current_observation']['relative_humidity'];
+        var current_wind = parsed_json['current_observation']['wind_mph'];
+        var current_rad = parsed_json['current_observation']['solarradiation'];
+        var current_url = parsed_json['current_observation']['forecast_url'];
+        var current_picture = parsed_json['current_observation']['icon_url'];
+
+        everything = "<img src=\""+current_picture+"\" alt= Icon of the current weather>";
+        everything += "<ul2>";
+        everything += "<li2>Location: "+location;
+        everything += "<li2>Temperature: "+temp_string;
+        everything += "<li2>Weather: "+current_weather;
+        everything += "<li2>Relative Humidity: "+current_hum;
+        everything += "<li2>Wind Speed: "+current_wind;
+        everything += "<li2>Solar Radiation: "+current_rad;
+        everything += "<li2>For more information: <a href="+current_url+">Click Here!</a> ";
+        everything += "</ul2>";
+        $("#weather").html(everything);
+      }
+    });
+  });
+
+});
+
+</script>
+<!--apigee lets you make all the url graph calls to websites-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <embed src="SF2 ryu wav.wav" autostart="true" loop="true"
+  width="2" height="0">-
+  </embed>
+
+  <form>
+
+  <h1>Current Weather Checker</h1>
+  Enter A Utah City: <input type="text" id="cityfield" value=""><br>
+  Suggestions: <br><span id="txtHint">Empty</span><br>
+  <input id="button" type="submit" value="Submit">
+  </form>
+
+  <br>
+  <br>
+  <h2>City</h2>
+  <textarea id="dispcity">No City Selected</textarea>
+  <p>Current Weather</p>
+  <div1 id="weather">No information available</div1>
+</body>
+</html>

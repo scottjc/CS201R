@@ -1,0 +1,66 @@
+html {
+    background: url(http://weather.entrustenergy.com/images/storm.jpg) no-repeat center center fixed;
+    background-size: 100%;
+}
+
+body{
+	text-align: center;
+	background-color: transparent;
+}
+
+h1 {
+	 color: white; 
+	 font-family: 'Helvetica Neue', sans-serif; 
+	 font-size: 75px; 
+	 font-weight: bold; 
+	 letter-spacing: -1px; 
+	 line-height: 1; 
+	 text-align: center;
+	 /*background-color:lime;*/ 
+}
+
+h2 {
+	color: white; 
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 50px;  
+	line-height: 32px; 
+	margin: 0 0 36px; 
+	text-align: center;
+	/*background-color: rgb(191, 0, 255);*/
+}
+
+p1 {
+	font-family: fantasy;
+	font-style: italic;
+    /*background-color: rgb(255,0,255);*/
+}
+
+form{
+	/*background-color: yellow;*/
+    line-height: 1.5em;
+    text-align: center;
+}
+
+ul1{
+    min-width: 696px;
+    padding-top: 20px;
+    }
+
+li1{
+    display: inline;
+    text-align:center;
+    }
+
+ul2{
+    display: list-item;
+    }
+
+li2{
+    /*background-color: white;*/
+    display: list-item;
+    }    
+
+div1{
+	width:200px;
+    margin:0 auto;
+}

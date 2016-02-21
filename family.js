@@ -16,7 +16,7 @@ angular.module('worktodoApp', ['ngAnimate'])
       return count;
     };
  
-    todoList.archive = function() {
+    todoList.archive = function() {//THE FUNCTION TO GET RID OF THE ELEMENTS!!!!!!!
       var oldTodos = todoList.todos;
       todoList.todos = [];
       angular.forEach(oldTodos, function(todo) {
