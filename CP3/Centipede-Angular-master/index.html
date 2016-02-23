@@ -24,16 +24,11 @@
 		<br>
 		<p>You can also click and buy awesome power ups in the shop at the top of the screen! (Best to use in between lives)</p>
 		<br>
+		<p>One last thing. Turn on your speakers for some free music!</p>
+		<br>
 		<p>Press any key to start</p>
 	</div>
-
-
-
-	<!--<div data-ng-if="shopDisplayed">
-		<h1>BUY STUFF IN THE SHOP</h1>
-	</div>-->
 	
-
 	<div id="everything">
 		
 		
@@ -50,11 +45,14 @@
     text-align:center;">
 						<li ng-repeat="todo in todoList.todos" style="display: inline">
 						  <input id = " checky" type="checkbox" ng-model="todo.done" ng-click="todoList.archive()">
-						  <span class="done-{{todo.done}}">{{todo.text}}: {{todo.texttwo}}</span>
+						  <span class="done-{{todo.done}}">{{todo.text}}: {{todo.cost}}</span>
 						</li>
 					  </ul>
 					<img src="http://vignette3.wikia.nocookie.net/videogames-fanon/images/f/f5/Beedle-WW.png/revision/latest/scale-to-width-down/135?cb=20131020133335">
-				</div>
+					<embed src="Overworld.mp3" autostart="true" loop="true"
+  					width="2" height="0">
+  					</embed>
+
 
 		</div>
 			

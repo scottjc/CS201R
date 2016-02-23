@@ -25,8 +25,8 @@ angular.module("gameApp", [])
 		
 		//SHOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		
-		todoList.todos = [{text:"Double-Shot", done:false, texttwo: "5000 pts"}, {text:"Extra Life", done:false, texttwo:"10000 pts"}];
-		todoList.RESETtodos = [{text:"Double-Shot", done:false, texttwo: "5000 pts"}, {text:"Extra Life", done:false,  texttwo:"10000 pts"}];
+		todoList.todos = [{text:"Double-Shot", done:false, cost: "5000 pts"}, {text:"Extra Life", done:false, cost:"10000 pts"}];
+		todoList.RESETtodos = [{text:"Double-Shot", done:false, cost: "5000 pts"}, {text:"Extra Life", done:false,  cost:"10000 pts"}];
 		
 		//supposed to reset the powerup list at gameover
 		todoList.resetPowerUps = function(){
@@ -62,24 +62,15 @@ angular.module("gameApp", [])
 			if(todo.done){
 				if(todo.text == "Double-Shot" && num < 5000){
 					//figure out how to change
-					alert("You don't have enough points to buy the Double-Shot!!\nPlease click on the game after clicking ok.");
+					alert("You don't have enough points to buy the Double-Shot!!\nPlease click on the game after clicking OK.");
 					todo.done = !todo.done;
-					// document.getElementById('checky') = !todoList.todos.checked;
-					// document.getElementById('')= !todoList.todos.checked;
-					// document.getElementById('gamey').focus();
-					// document.getElementById('gamey').scrollIntoView();
-					document.getElementById("gamey").click;
-					document.getElementById('centipedeGame').focus();
+
 
 				}
 				if(todo.text == "Extra Life" && num < 10000){
 					//figure out how to change
-					alert("You don't have enough points to buy the Extra Life!!\nPlease click on the game after clicking ok.");
+					alert("You don't have enough points to buy the Extra Life!!\nPlease click on the game after clicking OK.");
 					todo.done = !todo.done;
-					// todoList.todos.checked = !todoList.todos.checked;
-					// todoList.todos.check = !todoList.todos.checked;
-					// document.focus();
-					document.getElementById("centipedeGame").focus();
 
 				}
 			}
