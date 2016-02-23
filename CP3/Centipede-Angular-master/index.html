@@ -1,20 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="gameApp">
+<html lang="en" >
 <head>
     <link rel="stylesheet" type="text/css" href="App/css/centipede.css">
-    <title>Centipede</title>
+	<link rel="stylesheet" type="text/css" href="./animations.css">
+	<!--<script src="./shop.js"></script>-->
+    <title>The Legend of Gomapede</title>
 </head>
-<body ng-controller="appController" ng-keydown="keydown($event)" ng-keyup="keyup($event)"  style="background-color:darkgrey">
-    <div data-ng-if="!instructionsDisplayed" class="instructions">
-        <h2>Instructions</h2>
-        <p>Shoot everything and stay alive</p>
-        <p>Arrow Keys to move</p>
-        <p>Space bar to fire</p>
-        <br>
-        <p>Press any key to start</p>
-    </div>
-    <div data-ng-if="instructionsDisplayed" centipede-game/>
+	
+	
+<body  id="game" ng-app="gameApp" ng-controller="appController" ng-keydown="keydown($event)" ng-keyup="keyup($event)"  style="background-color:darkgrey; text-align:center; vertical-align:middle;">
+	
+	
+	
+	<div data-ng-if="!instructionsDisplayed" class="instructions">
+		<h1>The Legend of Gomapede</h1>
+		<h2>__________________________________</h2>
+		<p><b>DESTROY EVERYTHING</b> with the power of ruppees! <img src = "http://zeldawiki.org/images/thumb/1/17/Green_Rupee_TWW.png/105px-Green_Rupee_TWW.png" display = "inline" height="20px">   
+		</p>
+		<p>Particularly the Gomapede</p>
+		<br>
+		<p>Arrow Keys to move Link (you CAN move up and down)</p>
+		<p>Space bar to fire <img src = "http://zeldawiki.org/images/thumb/1/17/Green_Rupee_TWW.png/105px-Green_Rupee_TWW.png" display = "inline" height="20px"> </p>
+		<br>
+		<p>You can also click and buy awesome power ups in the shop at the top of the screen! (Best to use in between lives)</p>
+		<br>
+		<p>Press any key to start</p>
+	</div>
 
+
+
+	<!--<div data-ng-if="shopDisplayed">
+		<h1>BUY STUFF IN THE SHOP</h1>
+	</div>-->
+	
+
+	<div id="everything">
+		
+		
+		
+		<div data-ng-if="instructionsDisplayed" id="shop" float="center">   <!--SHOOOOOOOOOOOOOP-->
+
+			<!--<h2>SHOP</h2>-->
+
+				<!--<div ng-controller="TodoListController as todoList">-->
+				<div ng-controller="appController as todoList" border="2px solid black" style=" display: inline; background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMZ7Up1NWcn829pFTNbfdduxyuspdhztUTxJP6xTTxDl9dbmXa')">
+					  <span><b style="color: white;">POWER-UP SHOP</b> ({{todoList.remaining()}} powerups left.)
+					<!--  [ <a href="" >Record the ordinances</a> ]-->
+					  <ul class="unstyled" display: inline;
+    text-align:center;">
+						<li ng-repeat="todo in todoList.todos" style="display: inline">
+						  <input id = " checky" type="checkbox" ng-model="todo.done" ng-click="todoList.archive()">
+						  <span class="done-{{todo.done}}">{{todo.text}}: {{todo.texttwo}}</span>
+						</li>
+					  </ul>
+					<img src="http://vignette3.wikia.nocookie.net/videogames-fanon/images/f/f5/Beedle-WW.png/revision/latest/scale-to-width-down/135?cb=20131020133335">
+				</div>
+
+		</div>
+			
+		<div id="gamey" data-ng-if="instructionsDisplayed" centipede-game/>    <!--GAAAAAAAAAAAAAAAAAAAME-->
+		
+		
+		
+			
+		
+
+		
+	
+	
+	</div> <!--//end everything-->
+	
+	
+	
+	
+	
+	
+	<!--<div ng-label="test">Test Stuff</div>-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="App/lib/angular.min.js"></script>
     <script src="App/gameApp.js"></script>
     <script src="App/js/constants/global-settings.js"></script>

@@ -9,6 +9,7 @@ angular.module("gameApp")
             gameState: gameState.gameActive,
             levelTransitionLineCount: 0,
             playerDieTime: null,
+			doubleshot: 0,
     
             currentLevel: function() {
                 return this.level;
@@ -57,6 +58,7 @@ angular.module("gameApp")
             },
     
             completeLevelTransition: function() {
+				
                 this.gameState = gameState.gameActive;
                 this.levelTransitionLineCount = 0;
             },
@@ -83,6 +85,10 @@ angular.module("gameApp")
     
                 if (this.lives === 0) {
                     this.gameState = gameState.gameOver;
+					this.doubleshot = 0;
+					globalSettings.maxBulletsOnScreen /= 2;
+					//appController.todoList.resetPowerUps();
+					
                 } else {
                     this.gameState = gameState.playerDeathTransition;
                 }

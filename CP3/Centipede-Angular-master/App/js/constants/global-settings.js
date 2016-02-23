@@ -1,5 +1,5 @@
 angular.module("gameApp")
-    .constant("globalSettings", {
+    .value("globalSettings", {
         spriteSize: 20,
         spriteSheetWidth: 4,
         playerAreaHeight: 6,
@@ -8,10 +8,10 @@ angular.module("gameApp")
 
         scoreMarkerFont: "10px sans-serif",
         scoreBoardFont: "16px Arial bold",
-        scoreBoardTitleFontColour: "red",
-        scoreBoardContentFontColour: "purple",
+        scoreBoardTitleFontColour: "white",
+        scoreBoardContentFontColour: "green",
         scoreBoardLivesXPositionText: 50,
-        scoreBoardLivesXPositionImage: 45,
+        scoreBoardLivesXPositionImage: 35,
         scoreBoardScoreXPosition: 200,
         scoreBoardLevelXPosition: 350,
         scoreBoardHighScoreXPosition: 500,
@@ -60,5 +60,8 @@ angular.module("gameApp")
         scoreHitCentipede: 100,
         scoreHitSpider: 1000,
         scoreHitFlea: 500,
-        scoreHitSnail: 2000
+        scoreHitSnail: 2000,
+	
+		//powerups
+		
     });

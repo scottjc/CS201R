@@ -89,8 +89,27 @@ angular.module("gameApp")
                 if (checkCollision(x, y)) {
                     bullet.bulletState = characterState.dead;
                 }
+				
+				bullets.push(bullet);
+				
+				//should I create second bullet???
+				if(gameStateService.doubleshot){
+					
 
-                bullets.push(bullet);
+					//create second bullet
+					var bullet = {
+						x: x,
+						y: y+1,
+						bulletState: characterState.active,
+						animationDeadCount: 0
+					};
+
+					if (checkCollision(x, y)) {
+						bullet.bulletState = characterState.dead;
+					}
+
+					bullets.push(bullet);
+				}
             },
 
             destroy: function() {

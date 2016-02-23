@@ -1,3 +1,5 @@
+
+
 angular.module("gameApp")
     .factory("gameService", ["graphicsEngineService", "gameBoardService", "globalSettings", "utilsService", "gameStateService", "boardLocation", "characterState", "characterDirection", "sprite", "scoreMarkerService", "spiderService", "fleaService", "snailService", "centipedeService", "bulletService", "playerService", "gameState", "keyPressHandlerService",
         function(graphicsEngineService, gameBoardService, globalSettings, utilsService, gameStateService, boardLocation, characterState, characterDirection, sprite, scoreMarkerService, spiderService, fleaService, snailService, centipedeService, bulletService, playerService, gameState, keyPressHandlerService) {
@@ -102,6 +104,17 @@ angular.module("gameApp")
             }
 
             function levelTransitionUpdate() {
+				/*function ($scope){
+					$scope.
+				}*/
+				//angular.element($('#shop')).html("PLEASE PRINT OUT STUFFFFFFFFF");
+				
+				
+				
+				//fheiafhnuiweapfhiewaofhieoapfiewaofjpeaoifhepwafejoiwfhepwaifewpafiehjwapfheiwapeifewa
+				
+				
+				
                 if (gameStateService.hasLevelTransitionResetAllLines()) {
                     initialiseLevel();
                     gameStateService.completeLevelTransition();
