@@ -85,8 +85,8 @@ angular.module("gameApp")
     
                 if (this.lives === 0) {
                     this.gameState = gameState.gameOver;
-					this.doubleshot = 0;
-					globalSettings.maxBulletsOnScreen /= 2;
+					//this.doubleshot = 0;
+					//globalSettings.maxBulletsOnScreen /= 2;
 					//appController.todoList.resetPowerUps();
 					
                 } else {
