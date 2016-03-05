@@ -19,7 +19,7 @@ form #button {
           transition: all 0.5s ease;
 	}
 form #button:hover{
-	color:#FFF; background: #FF69B4; border: none;
+	color:#FFF; background: #FF00FF; border: none;
 	padding: 10px;  width: 9%; 
     -webkit-transform: rotate(-10deg);
      -moz-transform: rotate(10deg);
@@ -32,14 +32,3 @@ form #button:hover{
 #messages li { padding: 5px 10px; }
 #messages li:nth-child(odd) { background: #eee; }
 #notifyUser { position: fixed; bottom: 42px; width: 100%; }
-#userpic{display:none;}
-#circular {
-  width: 20px;
-  height: 20px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  }

@@ -1,8 +1,20 @@
-
 $(document).ready(function(){
-    $("#serialize").click(function(){//grab the name and comment out of form and put into div
+    $("#serialize").click(function(){
         var myobj = {Name:$("#Name").val(),Comment:$("#Comment").val()};
         jobj = JSON.stringify(myobj);
         $("#json").text(jobj);
+        console.log(jobj);
+
+
+		var url = "comment";
+		$.ajax({
+		  	url:url,
+		  	type: "POST",
+			data: jobj,
+			contentType: "application/json; charset=utf-8",
+			success: function(data,textStatus) {
+			   $("#done").html(textStatus);
+			}
+		})
     });
 });

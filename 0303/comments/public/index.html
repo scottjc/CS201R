@@ -7,13 +7,28 @@
 </head>
 
 <body>
+<script>
+    $("#getThem").click(function() {
+    $.getJSON('comments', function(data) {
+      console.log(data);
+      var everything = "<ul>";
+      for(var comment in data) {
+        com = data[comment];
+        everything += "<li>Name: " + com.Name + " -- Comment: " + com.Comment + "</li>";
+      }
+      everything += "</ul>";
+      $("#comments").html(everything);
+    })
+  })
+</script>
+
 <form id="commentForm" action="">
   <label for="name">Name: </label><input type="text" id="Name" placeholder="Name"><br>
   <label for="comment">comment: </label><input type="text" id="Comment" placeholder="Comment"><br>
 </form>
 
-<button id="serialize">Serialize form values</button>
-<button id="getThem">Get Comments</button>
+<button id="serialize">Submit Comment</button>
+<button id="getThem">Show Comments</button>
 <div id="json"></div>
 <div id="done"></div>
 <div id="comments"></div>

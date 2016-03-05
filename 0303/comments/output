@@ -1,0 +1,16 @@
+nohup: ignoring input
+/opt/bitnami/apache2/htdocs/201html/0303/comments/routes/index.js:48
+});
+  ^
+
+SyntaxError: Unexpected end of input
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:404:25)
+    at Object.Module._extensions..js (module.js:432:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:313:12)
+    at Module.require (module.js:366:17)
+    at require (module.js:385:17)
+    at Object.<anonymous> (/opt/bitnami/apache2/htdocs/201html/0303/comments/app.js:8:14)
+    at Module._compile (module.js:425:26)
+    at Object.Module._extensions..js (module.js:432:10)

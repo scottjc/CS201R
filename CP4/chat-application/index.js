@@ -14,11 +14,14 @@ app.get('/', function(req, res){
  
 // Register events on socket connection
 io.on('connection', function(socket){
-  socket.on('chatMessage', function(from, msg){
-    io.emit('chatMessage', from, msg);
+  socket.on('chatMessage', function(from, msg, userpic){
+    io.emit('chatMessage', from, msg, userpic);
   });
   socket.on('notifyUser', function(user){
     io.emit('notifyUser', user);
+  });
+  socket.on('newmessage', function(user, joinedmessage){
+    io.emit('newmessage', user, joinedmessage);
   });
 });
  
