@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Comments!</title>
+  <title>Bulletin Board</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="javascripts/comments.js"></script>
+ <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
-<script>
-    $("#getThem").click(function() {
-    $.getJSON('comments', function(data) {
-      console.log(data);
-      var everything = "<ul>";
-      for(var comment in data) {
-        com = data[comment];
-        everything += "<li>Name: " + com.Name + " -- Comment: " + com.Comment + "</li>";
-      }
-      everything += "</ul>";
-      $("#comments").html(everything);
-    })
-  })
-</script>
-
+<h1>Bulletin Board</h1>
+<h2>Enter your name and a comment to our database, then check out everything everyone has said ever!!!</h2>
 <form id="commentForm" action="">
   <label for="name">Name: </label><input type="text" id="Name" placeholder="Name"><br>
-  <label for="comment">comment: </label><input type="text" id="Comment" placeholder="Comment"><br>
+  <label for="comment">Comment: </label><input type="text" id="Comment" placeholder="Comment"><br>
 </form>
 
 <button id="serialize">Submit Comment</button>
 <button id="getThem">Show Comments</button>
+<div id="stuff">
 <div id="json"></div>
 <div id="done"></div>
 <div id="comments"></div>
+</div>
 </body>
 </html>
-<!--http://ec2-52-10-93-201.us-west-2.compute.amazonaws.com/201html/0303/comments/public/index.html-->
