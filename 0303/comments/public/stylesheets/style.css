@@ -49,4 +49,12 @@ ul
     /*background-color: rgba(255,255,255,0.5);*/
     border-radius: 25px;
 }
+#comments
+{
+    /*Want to change the background color to the unhighlighted when results are found*/
+    background-color: transparent;
+    text-align: center;
+    padding:1px;
+    background-color: rgba(244,164,96,0.5);
+    border-radius: 25px;
 }
