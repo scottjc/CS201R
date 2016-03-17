@@ -1,16 +1,257 @@
 nohup: ignoring input
-/opt/bitnami/apache2/htdocs/201html/0303/comments/routes/index.js:48
-});
-  ^
-
-SyntaxError: Unexpected end of input
-    at exports.runInThisContext (vm.js:53:16)
-    at Module._compile (module.js:404:25)
-    at Object.Module._extensions..js (module.js:432:10)
-    at Module.load (module.js:356:32)
-    at Function.Module._load (module.js:313:12)
-    at Module.require (module.js:366:17)
-    at require (module.js:385:17)
-    at Object.<anonymous> (/opt/bitnami/apache2/htdocs/201html/0303/comments/app.js:8:14)
-    at Module._compile (module.js:425:26)
-    at Object.Module._extensions..js (module.js:432:10)
+Connected
+[0mGET / [32m200 [0m7.591 ms - 853[0m
+[0mGET /javascripts/comments.js [36m304 [0m3.066 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.498 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.287 ms - -[0m
+[0mGET / [36m304 [0m0.912 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.363 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.245 ms - -[0m
+[0mGET / [36m304 [0m0.464 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.335 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.358 ms - -[0m
+[0mGET / [36m304 [0m0.877 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.330 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.269 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Hello',
+    Name: 'Mickey',
+    _id: 56da42c24de8177036c34eeb },
+  { __v: 0,
+    Comment: 'Whaz up?',
+    Name: 'Scott',
+    _id: 56da42d84de8177036c34eec },
+  { __v: 0,
+    Comment: 'La al',
+    Name: 'A',
+    _id: 56db409b5e05717644311d4c },
+  { __v: 0, Comment: '', Name: '', _id: 56db4b849f53d8b144d2845a } ]
+[0mGET /comments [36m304 [0m22.822 ms - -[0m
+[0mGET / [36m304 [0m0.459 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.771 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.308 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Hello',
+    Name: 'Mickey',
+    _id: 56da42c24de8177036c34eeb },
+  { __v: 0,
+    Comment: 'Whaz up?',
+    Name: 'Scott',
+    _id: 56da42d84de8177036c34eec },
+  { __v: 0,
+    Comment: 'La al',
+    Name: 'A',
+    _id: 56db409b5e05717644311d4c },
+  { __v: 0, Comment: '', Name: '', _id: 56db4b849f53d8b144d2845a } ]
+[0mGET /comments [32m200 [0m4.260 ms - 295[0m
+[0mGET /favicon.ico [33m404 [0m370.957 ms - 2026[0m
+[0mGET /favicon.ico [33m404 [0m43.860 ms - 2026[0m
+[0mGET / [36m304 [0m1.054 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.568 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.271 ms - -[0m
+[0mGET / [36m304 [0m0.883 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.418 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.239 ms - -[0m
+[0mGET / [36m304 [0m0.379 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.265 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.317 ms - -[0m
+[0mGET / [36m304 [0m0.494 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.980 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.240 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m73.680 ms - 2026[0m
+[0mGET / [36m304 [0m0.398 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.403 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.371 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m19.776 ms - 2026[0m
+[0mGET / [32m200 [0m1.472 ms - 853[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.929 ms - 923[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.520 ms - 1301[0m
+[0mGET / [36m304 [0m0.393 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.396 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.265 ms - -[0m
+[0mGET / [32m200 [0m0.637 ms - 853[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.558 ms - 923[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.459 ms - 1301[0m
+[0mGET / [36m304 [0m0.409 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.367 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.229 ms - -[0m
+[0mGET / [36m304 [0m0.409 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.503 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.299 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Hello',
+    Name: 'Mickey',
+    _id: 56da42c24de8177036c34eeb },
+  { __v: 0,
+    Comment: 'Whaz up?',
+    Name: 'Scott',
+    _id: 56da42d84de8177036c34eec },
+  { __v: 0,
+    Comment: 'La al',
+    Name: 'A',
+    _id: 56db409b5e05717644311d4c },
+  { __v: 0, Comment: '', Name: '', _id: 56db4b849f53d8b144d2845a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8ce69d2e830f048aca136 },
+  { __v: 0, Comment: 'f', Name: 'f', _id: 56e8d49dd2e830f048aca137 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca138 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca139 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13b },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13c },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13d },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a2d2e830f048aca13e },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a3d2e830f048aca13f },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca140 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca141 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8db9cd2e830f048aca142 } ]
+[0mGET /comments [32m200 [0m20.922 ms - 1155[0m
+[0mGET /favicon.ico [33m404 [0m22.309 ms - 2026[0m
+[0mGET / [32m200 [0m0.731 ms - 853[0m
+[0mGET /javascripts/comments.js [32m200 [0m0.565 ms - 923[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.372 ms - 1301[0m
+[0mGET /favicon.ico [33m404 [0m12.567 ms - 2026[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Hello',
+    Name: 'Mickey',
+    _id: 56da42c24de8177036c34eeb },
+  { __v: 0,
+    Comment: 'Whaz up?',
+    Name: 'Scott',
+    _id: 56da42d84de8177036c34eec },
+  { __v: 0,
+    Comment: 'La al',
+    Name: 'A',
+    _id: 56db409b5e05717644311d4c },
+  { __v: 0, Comment: '', Name: '', _id: 56db4b849f53d8b144d2845a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8ce69d2e830f048aca136 },
+  { __v: 0, Comment: 'f', Name: 'f', _id: 56e8d49dd2e830f048aca137 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca138 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca139 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13b },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13c },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13d },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a2d2e830f048aca13e },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a3d2e830f048aca13f },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca140 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca141 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8db9cd2e830f048aca142 } ]
+[0mGET /comments [32m200 [0m13.163 ms - 1155[0m
+POST comment route
+In the GET route
+{ Name: 'Silly Rabbit', Comment: 'Tricks are for Kids!' }
+{ _id: 56e9ac571edb8db73a0b9ff1,
+  Comment: 'Tricks are for Kids!',
+  Name: 'Silly Rabbit' }
+{ _id: 56e9ac571edb8db73a0b9ff1,
+  Comment: 'Tricks are for Kids!',
+  Name: 'Silly Rabbit',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m34.670 ms - 2[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Hello',
+    Name: 'Mickey',
+    _id: 56da42c24de8177036c34eeb },
+  { __v: 0,
+    Comment: 'Whaz up?',
+    Name: 'Scott',
+    _id: 56da42d84de8177036c34eec },
+  { __v: 0,
+    Comment: 'La al',
+    Name: 'A',
+    _id: 56db409b5e05717644311d4c },
+  { __v: 0, Comment: '', Name: '', _id: 56db4b849f53d8b144d2845a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8ce69d2e830f048aca136 },
+  { __v: 0, Comment: 'f', Name: 'f', _id: 56e8d49dd2e830f048aca137 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca138 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca139 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13b },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13c },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13d },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a2d2e830f048aca13e },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a3d2e830f048aca13f },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca140 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca141 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8db9cd2e830f048aca142 },
+  { __v: 0,
+    Comment: 'Tricks are for Kids!',
+    Name: 'Silly Rabbit',
+    _id: 56e9ac571edb8db73a0b9ff1 } ]
+[0mGET /comments [32m200 [0m8.204 ms - 1253[0m
+[0mGET / [36m304 [0m0.461 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m14.095 ms - 2026[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.386 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.373 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m15.334 ms - 2026[0m
+[0mGET / [36m304 [0m0.373 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.342 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.232 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m18.062 ms - 2026[0m
+[0mGET / [36m304 [0m0.418 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.395 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.322 ms - -[0m
+In the GET route?
+[ { __v: 0,
+    Comment: 'Hello',
+    Name: 'Mickey',
+    _id: 56da42c24de8177036c34eeb },
+  { __v: 0,
+    Comment: 'Whaz up?',
+    Name: 'Scott',
+    _id: 56da42d84de8177036c34eec },
+  { __v: 0,
+    Comment: 'La al',
+    Name: 'A',
+    _id: 56db409b5e05717644311d4c },
+  { __v: 0, Comment: '', Name: '', _id: 56db4b849f53d8b144d2845a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8ce69d2e830f048aca136 },
+  { __v: 0, Comment: 'f', Name: 'f', _id: 56e8d49dd2e830f048aca137 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca138 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d49fd2e830f048aca139 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13a },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a0d2e830f048aca13b },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13c },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a1d2e830f048aca13d },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a2d2e830f048aca13e },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a3d2e830f048aca13f },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca140 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8d4a4d2e830f048aca141 },
+  { __v: 0, Comment: '', Name: '', _id: 56e8db9cd2e830f048aca142 },
+  { __v: 0,
+    Comment: 'Tricks are for Kids!',
+    Name: 'Silly Rabbit',
+    _id: 56e9ac571edb8db73a0b9ff1 },
+  { __v: 0,
+    Comment: 'Hi!',
+    Name: 'Johnny',
+    _id: 56e9ef62d2e830f048aca143 },
+  { __v: 0, Comment: '', Name: '', _id: 56e9f1a2d2e830f048aca144 },
+  { __v: 0,
+    Comment: '',
+    Name: 'Johnny',
+    _id: 56e9f1a7d2e830f048aca145 },
+  { __v: 0,
+    Comment: 'Hello!',
+    Name: 'Johnny',
+    _id: 56e9f1afd2e830f048aca146 },
+  { __v: 0,
+    Comment: 'ff',
+    Name: 'fffadsf',
+    _id: 56ea0e00d2e830f048aca147 },
+  { __v: 0, Comment: '', Name: '', _id: 56ea0e07d2e830f048aca148 },
+  { __v: 0,
+    Comment: 'cmmnt',
+    Name: 'Nmae',
+    _id: 56ea1d49d2e830f048aca149 } ]
+[0mGET /comments [32m200 [0m12.423 ms - 1760[0m
+[0mGET /favicon.ico [33m404 [0m7.817 ms - 2026[0m
+[0mGET / [36m304 [0m0.343 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.895 ms - -[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.587 ms - 1301[0m
+[0mGET /favicon.ico [33m404 [0m8.682 ms - 2026[0m
