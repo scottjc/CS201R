@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Comments</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="javascripts/app.js"></script>
+   <link rel='stylesheet' href='stylesheets/style.css' type='text/css'/>
+
+</head>
+<body ng-app="comment" ng-controller="MainCtrl">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="page-header"> 
+  <h1>Comments</h1>
+</div>
+
+  <h2>
+Comment........Picture...
+  </h2>
+  <form ng-submit="addComment()" style = "margin-top30px;">
+    <input type="text" ng-model="formContent" placeholder="comment here" required></input>
+    <input type="text" ng-model="formContent2" placeholder="picture here" required></input>
+    <button type="submit">Add Comment</button>
+  </form>
+  <div>
+    {{test}}
+  </div>
+  <div ng-repeat="comment in comments | orderBy: ['title','-upvotes']">
+    <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span>
+    <img src= {{comment.picture}} style= "width:120px;height:120px;"> {{comment.title}} - upvotes: {{comment.upvotes}}<!--Whats in string is the same, all else is not-->
+    <span class="glyphicon glyphicon-trash" ng-click="delete(comment)"></span>
+  </div>
+</div>
+</div>
+</body>
+</html>
+
+<!-- router.param we'll find this object by ID, next goes into the body of our route. There it returns the json object nt the result.
+
+use PUT for upvote request
+
+use angular to upvote
+
+-style it!
+^picture formatting
+^add a remove function, etc.
+-know what your doing and do it again!
+-->

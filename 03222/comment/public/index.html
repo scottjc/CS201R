@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>Best Music</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="javascripts/app.js"></script>
+   <link rel='stylesheet' href='stylesheets/style.css' type='text/css'/>
+
+</head>
+<body ng-app="comment" ng-controller="MainCtrl">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="page-header"> 
+  <h1>Best Music</h1>
+</div>
+
+  <h2>
+  Enter your favorite songs into our database and like them!
+  </h2>
+  <form ng-submit="addComment()" style = "margin-top30px;">
+    Song Title:<input type="text" ng-model="formContent" placeholder="Title here" required></input>
+    Cover Art URL:<input type="text" ng-model="formContent2" placeholder="Cover Art URL" required></input>
+     Album:<input type="text" ng-model="formContent3" placeholder="Album here" required></input>
+     Artist:<input type="text" ng-model="formContent4" placeholder="Artist here" required></input>
+     Genre:<input type="text" ng-model="formContent5" placeholder="Genre here" required></input>
+    <button type="submit">Add to Database</button>
+  </form>
+ <!--  <div>
+    {{test}}
+  </div> -->
+  <div id="infos" ng-repeat="comment in comments | orderBy: ['-genre','-upvotes']">
+    <span  style="color:blue" class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span> {{comment.title}}, {{comment.power}},{{comment.artist}}, {{comment.genre}}
+    <img src= {{comment.picture}} style= "width:120px;height:120px;">
+    - upvotes: {{comment.upvotes}}
+    <br>
+    <!--Whats in string is the same, all else is not-->
+    Delete this hero from our database: <span style="color:black" class="glyphicon glyphicon-trash" ng-click="delete(comment)"></span>
+    <br>
+    <br>
+    <br>
+
+  </div>
+</div>
+</div>
+</body>
+</html>
+
+<!-- router.param we'll find this object by ID, next goes into the body of our route. There it returns the json object nt the result.
+
+use PUT for upvote request
+
+use angular to upvote
+
+-style it!
+^picture formatting
+^add a remove function, etc.
+-know what your doing and do it again!
+-->
